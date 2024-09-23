@@ -1,0 +1,23 @@
+/* Franklin Gothic Book */
+@font-face {
+  font-family: 'Franklin Gothic Book';
+  src: url(fonts/FranklinGothic.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Franklin Gothic Demi */
+@font-face {
+  font-family: 'Franklin Gothic Demi';
+  src: url(fonts/FranklinGothic.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Another Font Example */
+@font-face {
+  font-family: 'Other Font';
+  src: url(fonts/FranklinGothic.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
