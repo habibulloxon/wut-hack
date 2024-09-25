@@ -1,0 +1,16 @@
+:root {
+  --primary: #024890;
+  --primary-dark: #024080;
+  --black-80: #252525CC;
+  --black: #252525;
+  --grey: #EEEEEE;
+  --yellow: #F5B706;
+  --white: #FFF;
+  --grey-hover: #E2E2E2;
+}
+
+body {
+  margin: 0;
+  width: 100%
+}
+

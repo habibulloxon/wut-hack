@@ -1,0 +1,61 @@
+.dates {
+  width: 80%;
+  margin: 200px auto 0;
+}
+
+.dates-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.date {
+  display: flex;
+  padding: 30px;
+  align-items: flex-start;
+  gap: 15%;
+  align-self: stretch;
+  background-color: var(--grey);
+  border-radius: 20px;
+}
+
+.date-tablet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8%;
+  gap: 8px;
+  padding: 10px 0;
+  background-color: var(--yellow);
+  border-radius: 30px;
+}
+.date-tablet > p {
+  font-size: 22px;
+  margin: 0;
+}
+
+.date-tablet p {
+  color: var(--white, #fff);
+  font-size: 14px;
+  margin: 0;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.event h3 {
+  color: var(--blue, #024890);
+  font-size: 32px;
+  margin: 0;
+}
+
+.event p {
+  color: var(--black-80);
+  font-size: 16px;
+  margin: 0;
+  width: 60%;
+}

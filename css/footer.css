@@ -1,0 +1,174 @@
+.footer {
+    border-radius: 20px 20px 0 0;
+    background-color: var(--primary);
+    margin-top: 120px;
+    max-width: 100%;
+    padding: 60px 50px 20px;
+
+  }
+
+  .footer-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footer-main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer-columns {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-logo-column {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+  }
+
+  .footer-logo {
+    aspect-ratio: 1.43;
+    object-fit: contain;
+    width: 210px;
+    max-width: 100%;
+  }
+
+  .footer-info-column {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 52%;
+    margin-left: 20px;
+  }
+
+  .footer-info {
+    margin-top: 9px;
+    flex-grow: 1;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font: 400 20px/1.2 "Franklin Gothic Book", -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  .contact-item {
+    margin-top: 12px;
+  }
+
+  .contact-item:first-child {
+    margin-top: 0;
+  }
+
+  .footer-links {
+    margin-top: 20px;
+  }
+
+  .footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-nav-list li {
+    margin-top: 12px;
+  }
+
+  .footer-nav-list li:first-child {
+    margin-top: 0;
+  }
+
+  .footer-nav-list a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font: 400 16px/1 "Franklin Gothic Book", -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  .footer-cta-column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 20px;
+  }
+
+  .footer-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  .register-button {
+    display: inline-block;
+    border-radius: 100px;
+    background-color: #fff;
+    color: #024890;
+    text-decoration: none;
+    padding: 12px 60px;
+    font: 30px "Franklin Gothic Medium", -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+.register-button:hover {
+  background-color: #E2E2E2;
+}
+.footer-nav-list a:hover {
+  color: #E2E2E2;
+}
+
+  .register-deadline {
+    color: #fff;
+    text-align: center;
+    margin-top: 8px;
+    font: 20px "Franklin Gothic Book", -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  .footer-bottom {
+    display: flex;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-legal {
+    display: flex;
+    min-width: 240px;
+    flex-direction: column;
+    align-items: start;
+    color: rgba(255, 255, 255, 0.8);
+    font: 400 16px "Franklin Gothic Book", -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  .footer-legal a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .footer-social {
+    display: flex;
+    width: 19%;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .social-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+
+.social-icon:hover {
+  fill: #E2E2E2;
+}
+
+ 

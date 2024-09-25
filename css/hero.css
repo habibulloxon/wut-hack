@@ -1,0 +1,75 @@
+.hero {
+  width: 80%;
+  display: flex;
+  margin: 40px auto 0;
+  gap: 25px;
+}
+
+.hero-content {
+  width: calc(50% - 25px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-color: var(--primary);
+  border-radius: 20px;
+}
+
+.hero-image {
+  width: calc(50% - 25px);
+}
+
+.hero-image-item {
+  width: 100%;
+}
+
+.hero-poster h2 {
+  width: 90%;
+  color: var(--white);
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Franklin Gothic Demi", sans-serif;
+  font-size: clamp(36px, 3.5vw, 80px);
+}
+
+.hero-poster p {
+  color: var(--white);
+  text-align: center;
+  font-family: "Franklin Gothic Book", sans-serif;
+  font-size: 16px;
+  margin: 8px auto;
+  width: 75%;
+}
+
+.registration {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(90% - 60px);
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 0 10px 0 20px;
+}
+
+.registration p {
+  color: var(--primary);
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.registration-button {
+  border: none;
+  background: var(--primary);
+  border-radius: 100px;
+  color: white;
+  padding: 12px 44px;
+}
+.registration-button:hover {
+  background: var(--primary-dark);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
