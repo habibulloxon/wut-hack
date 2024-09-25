@@ -7,16 +7,20 @@
   font-size: clamp(34px, 2.6vw, 60px);
   white-space: nowrap;
 }
+.participants .title .stroke {
+  width: 70%;
+} 
 
 .team-tablets {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin: 20px 0 10px;
 }
 
 .part-tab {
   width: calc(25% - 12px);
+  aspect-ratio: 4/1;
   background-color: var(--grey);
   border-radius: 20px;
   display: flex;
@@ -74,4 +78,56 @@
 
 .active_tab h3 {
   color: var(--white)
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+  .participants {
+    width: 90%;
+    margin: 80px auto 0;
+  }
+
+  .participants .title .stroke {
+    min-width: 15%;
+  }
+
+  .team-tablets {
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 20px;
+  }
+
+  .part-tab {
+    width:  calc(50% - 4px);
+    border-radius: 12px;
+    padding: 21px 19px;
+  }
+
+  .part-tab {
+    font-weight: 400;
+    font-family: "Franklin Gothic Book",sans-serif;
+  }
+
+  .participants-names {
+    display: none;
+  }
+  .team-images img {
+    aspect-ratio: 1.5/1;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .participants .title .stroke {
+    width: 60%;
+  }
+
+  .team-tablets {
+    flex-wrap: nowrap;
+  }
+
+  .part-tab {
+    width: calc(25%-8px);
+  }
+  .participants {
+    margin: 100px auto 0;
+  }
 }

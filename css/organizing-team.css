@@ -4,14 +4,13 @@
   position: relative;
 }
 
-.organizing-team .title h2 {
-  font-size: 45px;
-}
-
 .org-tablets {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
+  margin: 40px 0;
+  width: 100%;
 }
 
 .org-tablet {
@@ -132,4 +131,98 @@
 
 .active_tablet h3, .active_tablet p {
   color: var(--white);
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+  .organizing-team {
+    width: 90%;
+    margin: 80px auto 0;
+  }
+  .organizing-team .title .stroke {
+    min-width: 25%;
+  }
+  .org-tablets {
+    width: 100%;
+    margin: 25px 0 54px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+    position: relative;
+  }
+  .org-tablet {
+    width: calc(50% - 4px);
+    border-radius: 12px;
+  }
+  .org-tablet p {
+    display: none;
+  }
+  .active_tablet p {
+    display: flex;
+    text-align: left;
+    position: absolute;
+    bottom: -40px;
+    left: 5px;
+    color: var(--black-80);
+    font-family: "Franklin Gothic Book", sans-serif;
+    font-size: 14px;
+  }
+  .arrow {
+    display: none;
+  }
+  .org-images div {
+    min-width: 100%;
+  }
+  .org-images div img {
+    width: 100%;
+  }
+  .org-images div div {
+    padding: 8px 16px;
+    min-width: 40%;
+    aspect-ratio: 4/1;
+
+  }
+  .org-images div div h4 {
+    color: var(--primary);
+    font-family: "Franklin Gothic Medium", sans-serif;
+    font-size: 18px;
+    max-width: 40%;
+    margin: 0;
+  }
+  .org-images div div p {
+    color: var(--black-80);
+    font-family: "Franklin Gothic Book", sans-serif;
+    font-size: 14px;
+    max-width: 40%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .organizing-team .title .stroke {
+    width: 65%;
+  }
+  .org-tablets {
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+  .org-tablet {
+    width: calc(25% - 8px);
+  }
+  .org-tablet h3 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .org-tablet p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .org-images div {
+    min-width: calc(50% - 8px);
+  }
+  .org-images div img {
+    width: 100%;
+  }
+  .organizing-team {
+    margin: 100px auto 0;
+  }
 }

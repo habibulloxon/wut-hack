@@ -9,7 +9,7 @@
 }
 
 .partners .title .stroke {
-  width: calc(80% - 38px);
+  width: 90%;
 }
 
 .logos {
@@ -35,4 +35,33 @@
 
 p a {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+  .partners {
+    width: 90%;
+    margin: 80px auto 0;
+  }
+  .partners .title .stroke {
+    width: 60%;
+  }
+  .logos {
+    margin: 20px 0 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    flex-wrap: nowrap;
+    gap: 4px;
+  }
+  .logos div {
+    min-width: 33%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .partners .title .stroke {
+    width: 80%;
+  }
+  .partners {
+    margin: 100px auto 0;
+  }
 }

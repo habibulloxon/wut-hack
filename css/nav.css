@@ -3,13 +3,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px auto 0;
   width: 80%;
+  margin: 40px auto 0;
 }
 
 .nav-logo {
-  width: 14%;
-  aspect-ratio: 4/1;
+  width: 11.61vw;
+}
+
+.sidebar {
+  display: none;
 }
 
 .nav-logo .logo-item {
@@ -46,6 +49,7 @@
   background: var(--primary);
   border-radius: 30px;
   color: white;
+  font-size: 16px;
   padding: 10px 28px;
 }
 
@@ -53,4 +57,8 @@
   background: var(--primary-dark);
   transition: all .3s ease-in-out;
   cursor: pointer;
+}
+
+#open {
+  display: none;
 }
