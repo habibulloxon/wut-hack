@@ -59,6 +59,10 @@
   position: relative;
 }
 
+.org-badge {
+  padding: 10px;
+}
+
 .org-images div img {
   width: 100%;
 }
@@ -68,14 +72,13 @@
   bottom: 12px;
   left: 12px;
   border-radius: 100px;
-  width: 40%;
   aspect-ratio: 3/1;
   background: var(--white);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  padding: 4px 10px;
+  padding: 5px 15px;
   transition: all 0.7s ease;
 }
 

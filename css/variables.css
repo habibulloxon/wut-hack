@@ -1,20 +1,20 @@
 :root {
   --primary: #024890;
   --primary-dark: #024080;
-  --black-80: #252525CC;
+  --black-80: #252525cc;
   --black: #252525;
-  --grey: #EEEEEE;
-  --yellow: #F5B706;
-  --white: #FFF;
-  --grey-hover: #E2E2E2;
+  --grey: #eeeeee;
+  --yellow: #f5b706;
+  --white: #fff;
+  --grey-hover: #e2e2e2;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
-  box-sizing: border-box ;
+  box-sizing: border-box;
 }
 
 body {

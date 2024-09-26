@@ -101,6 +101,7 @@
 .faq p {
   color: var(--black-80);
   font-size: 18px;
+  margin-top: 15px;
 }
 
 @media screen and (min-width: 360px) and (max-width: 1024px) {
