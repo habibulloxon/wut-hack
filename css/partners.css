@@ -49,13 +49,16 @@ p a {
   }
   .logos {
     margin: 20px 0 10px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    flex-wrap: nowrap;
+    flex-direction: column;
     gap: 4px;
   }
   .logos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 33%;
+    width: 100%;
+    aspect-ratio: 2/1;
   }
 }
 
@@ -65,5 +68,14 @@ p a {
   }
   .partners {
     margin: 100px auto 0;
+  }
+
+  .logos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .logos div {
+    width: calc(50% - 4px)
   }
 }

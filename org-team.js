@@ -2,7 +2,11 @@ let groupbuttons = Array.from(document.querySelectorAll(".org-tablet"));
 let images = document.querySelector(".org-images");
 let arrowButton1 = document.querySelector(".arrow-1");
 let arrowButton2 = document.querySelector(".arrow-2");
+let mfImage = document.getElementById("mf-img").getBoundingClientRect().width;;
 
+window.addEventListener('resize', function(event){
+  mfImage = document.getElementById("mf-img").getBoundingClientRect().width;
+});
 groupbuttons.forEach( (item, ind) => {
   item.addEventListener("click", () => {
     images.innerHTML = photos[ind];
@@ -13,12 +17,12 @@ groupbuttons.forEach( (item, ind) => {
 })
 
 arrowButton1.addEventListener('click', () => {
-  images.scrollLeft -= 300;
+  images.scrollLeft -= mfImage + 12;
 });
 
 
 arrowButton2.addEventListener('click', () => {
-  images.scrollLeft += 300;
+  images.scrollLeft += mfImage + 12;
 });
 
 let group1 = `<div>

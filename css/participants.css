@@ -47,6 +47,9 @@
 .team-images img {
   width: 100%;
 }
+.team-images img {
+  aspect-ratio: 1.5/1;
+}
 
 .participants-names {
   display: flex;

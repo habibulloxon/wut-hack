@@ -39,18 +39,14 @@
 
 .question > p {
   position: absolute;
-  top: 50%;
+  top: 15px;
   left: 1%;
-  transform: translate( 1%, -50%);
-  width: 3%;
-  aspect-ratio: 1/1;
-  padding: 8px;
   display: flex;
+  padding: 6px;
   justify-content: center;
   align-items: center;
   border-radius: 100px;
   background: var(--yellow);
-  margin: 0;
 } 
 .faq .question > p {
   color: var(--white);
@@ -58,6 +54,7 @@
 
 .question-answer {
   width: 50%;
+  white-space: nowrap;
 }
 
 .question-answer h3 {
@@ -74,7 +71,7 @@
   width: 100%;
   margin: 12px 0 0;
   transition: all 1s ease-in-out;
-
+  white-space: wrap;
 }
 
 .plus {
@@ -130,6 +127,7 @@
 
   .question-answer  {
     width: 100%;
+    white-space: wrap;
   }
 
   .question-answer h3 {
@@ -147,9 +145,8 @@
   }
   .question > p {
     display: flex;
-    width: 30px;
-    height: 30px;
-    padding: 5px;
+    padding: 6px;
+    top: -5px;
   }
   .question {
     justify-content: center;
