@@ -72,6 +72,11 @@
   font-size: 18px;
   padding: 12px 44px;
 } 
+
+.registration-button a {
+  color: #FFF;
+} 
+
 .registration-button:hover {
   background: var(--primary-dark);
   transition: all .3s ease-in-out;

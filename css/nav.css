@@ -11,6 +11,10 @@
   width: 11.61vw;
 }
 
+.nav-btn a {
+  color: white;
+}
+
 .sidebar {
   display: none;
 }
