@@ -49,16 +49,12 @@
   gap: 12px;
   width: 100%;
   margin-top: 12px;
-  overflow-x: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
-.org-images::-webkit-scrollbar {
-  display: none;
-}
 
 .org-images div {
-  min-width: calc(25% - 12px);
   position: relative;
 }
 
@@ -68,33 +64,32 @@
 
 .org-images div img {
   width: 100%;
+  border-radius: 20px;
 }
 
-.org-images div div {
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
-  border-radius: 100px;
-  aspect-ratio: 3/1;
-  background: var(--white);
+.org-names {
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: center;
-  padding: 5px 15px;
-  transition: all 0.7s ease;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 60px;
+  left: 12px;
+  max-width: 90%;
 }
 
-.org-images div div h4 {
-  color: var(--primary);
-  font-size: 20px;
-  font-weight: 400;
+.org-names div {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 4px 10px;
+  width: 25%;
+}
+.org-names h4 {
   margin: 0;
-  width: 74%;
-  white-space: nowrap;
+  color: var(--primary);
+  font-size: 18px;
 }
 
-.org-images div div p {
+.org-names p {
   color: var(--black-80);
   font-size: 14px;
   font-weight: 400;
@@ -175,30 +170,17 @@
   .arrow {
     display: none;
   }
-  .org-images div {
-    min-width: 100%;
-  }
+
   .org-images div img {
     width: 100%;
   }
-  .org-images div div {
+  .org-names {
     padding: 8px 16px;
     min-width: 40%;
-    aspect-ratio: 4/1;
+    aspect-ratio: 2/1;
   }
-  .org-images div div h4 {
-    color: var(--primary);
-    font-family: "Franklin Gothic Medium", sans-serif;
-    font-size: 18px;
-    max-width: 40%;
-    margin: 0;
-  }
-  .org-images div div p {
-    color: var(--black-80);
-    font-family: "Franklin Gothic Book", sans-serif;
-    font-size: 14px;
-    max-width: 40%;
-    margin: 0;
+  .org-names {
+    display: none;
   }
   .mentors-team .org-images {
     flex-direction: column;
