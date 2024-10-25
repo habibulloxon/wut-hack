@@ -67,6 +67,12 @@
   border-radius: 20px;
 }
 
+.org-images-wrapper {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .org-names {
   display: flex;
   align-items: center;
