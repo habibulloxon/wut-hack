@@ -13,20 +13,24 @@
 }
 
 .logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
   margin-top: 15px;
 }
 
 .logos div {
-  width: calc(100%/6 - 24px);
-  background-color: var(--grey);
+  /* background-color: var(--grey); */
   border-radius: 20px;
-  padding: 30px 5px;
-  text-align: center;
-  color: var(--primary);
-  font-size: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos img {
+  max-width: 100%;
+  height: auto;
 }
 
 .partners p {
@@ -44,38 +48,43 @@ p a {
     width: 90%;
     margin: 80px auto 0;
   }
+
   .partners .title .stroke {
     width: 60%;
   }
+
   .logos {
     margin: 20px 0 10px;
-    flex-direction: column;
+    grid-template-columns: 1fr; /* Stacks items vertically */
     gap: 4px;
   }
+
   .logos div {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 33%;
     width: 100%;
-    aspect-ratio: 2/1;
+    aspect-ratio: 2 / 1; /* Keeps a consistent height-to-width ratio */
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
-  .partners .title .stroke {
-    width: 80%;
-  }
+/* Additional styling for larger screens (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .partners {
     margin: 100px auto 0;
   }
 
+  .partners .title .stroke {
+    width: 80%;
+  }
+
   .logos {
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    gap: 8px;
     width: 100%;
   }
+
   .logos div {
-    width: calc(50% - 4px)
+    width: 100%; /* Ensures divs take full column width */
   }
 }
